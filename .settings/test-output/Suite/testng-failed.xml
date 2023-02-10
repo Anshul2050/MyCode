@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.dalal.BaseTest.Listener"/>
+    <listener class-name="com.dalal.BaseTest.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.dalal.testLayer.ProfileOptionsTest">
+        <methods>
+          <include name="veriFyUserIdTest"/>
+          <include name="launchApplication"/>
+          <include name="verifyUpdatePassword"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="tearDown"/>
+          <include name="veriFyLogOutTest"/>
+        </methods>
+      </class> <!-- com.dalal.testLayer.ProfileOptionsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

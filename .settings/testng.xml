@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.dalal.BaseTest.Listener"></listener>
+
+		<listener class-name="com.dalal.BaseTest.ExtentReporterNG"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+
+		<classes>
+
+		<!--<class name="com.dalal.testLayer.SignUpPageTest" /> -->	
+			<!-- <class name="com.dalal.testLayer.LoginPageTest2" />-->
+		<!--	<class name="com.dalal.testLayer.SellFunctionalityTest"/>-->
+<!--			<class name="com.dalal.testLayer.BuyFunctionalityTest"/>-->
+			<class name="com.dalal.testLayer.ProfileOptionsTest"/>
+			
+			
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
